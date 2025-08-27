@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: rgb(2, 149, 218);
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-columns: min-content;
+    gap: 45px;
+    color: aliceblue;
+    grid-auto-rows: min-content;
+    padding: 20px;
+}
+
+.sidebar_item {
+    display: flex;
+    gap: 12px;
+    width: min-content;
+}
+
+.nav,
+.utilities {
+
+    margin-left: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: min-content;
+}
+
+
+#logo_text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    align-self: center;
+}
+
+#logo_icon {
+    width: 90px;
+    height: 90px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-self: center;
+}
+
+.sidebar svg {
+    width: 35px;
+    height: auto;
+}
+
+svg {
+    fill: currentColor;
+}
+
+.nav p {
+    cursor: pointer;
+}
+
+.utilities p {
+    cursor: pointer;
+}
+
+
+.header {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.header svg {
+    fill: currentColor;
+    width: 40px;
+    height: auto;
+}
+
+.search {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+input {
+    border: 0;
+    background-color: rgb(210, 219, 219);
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 32px;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    justify-self: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.welcome p {
+    font-weight: 300px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.profile_image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(241, 193, 33);
+}
+
+.profile_image_big {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(241, 193, 33);
+    cursor: pointer;
+
+}
+
+
+
+.welcome {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+button {
+    border: 0;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(2, 149, 218);
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-self: flex-end;
+    align-self: flex-end;
+
+}
+
+.main {
+    background-color: rgb(210, 219, 219);
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.projects {
+    grid-row: 1/-1;
+}
+
+.projects,
+.announcment,
+.trending {
+    /* background-color: blueviolet; */
+    padding-top: 30px;
+    padding-left: 1%;
+}
+
+.title {
+    font-size: 1.3rem;
+}
+
+.card_container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+    margin-top: 5px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px 5px;
+    border-left: 10px solid rgb(241, 193, 33);
+    border-radius: 5px;
+}
+
+.card .heading {
+    align-self: flex-start;
+    font-size: 1.3rem;
+}
+
+.card .subheading {
+    align-self: flex-start;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.747);
+
+}
